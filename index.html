@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YouTube background navigation</title>
+<meta name="description" content="jQuery plugin that lets you create background videos using youtube api and control navigation.">
+<meta name="keywords" content="jQuery, Youtube, background, navigation, html, css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/ytbgnav.css">
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+</head>
+
+<body>
+
+<div class="top_box">
+	<div class="title">AOA</div>
+	<div class="btn_pop"></div>
+	<div class="btn_vol on"></div>
+	<div class="bg_dot"></div>
+	<div id="player"></div>
+	<ul class="control">
+		<li class="on">짧은 치마</li>
+		<li>사뿐사뿐</li>
+		<li>흔들려</li>
+		<li>단발머리</li>
+		<li>질투나요</li>
+	</ul>
+
+	<div class="footer">Icons made by <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</div>
+
+<!-- popup -->
+<div class="pop_yt" style="display:none">
+	<div class="close"></div>
+	<iframe width="960" height="540" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="pop_overlay" ></div>
+
+<script>
+// YouTube ID
+var bgID = ["q6f-LLM1H6U","qEYOyZVWlzs","R1-BTf3_Mys","N5wzkQvzp4c","9ZC4sPxMQ_M"];
+var popID = ["56hGcCt0NuU","srK7Vj5p9Tg","18fSsOulNYw","cSxrDMADfJA","bhKFSXN2Fr4"];
+</script>
+<script src="js/ytbgnav.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Youtube background navigation stylesheet
+   v1.0 | 20151102
+   License: moonspam (http://iluku.net/)
+*/
+
+html,
+body{height:100%;font-family:tahoma, 'NanumBarunGothic', dotum, sans-serif}
+body{background-color:#000}
+.top_box{position:relative;width:100%;height:100%;overflow:hidden}
+.top_box iframe{position:absolute;width:400%;height:200%;margin-left:-150%;margin-top:-20%;z-index:-99}
+.top_box .title{position:absolute;left:50%;top:50%;width:500px;height:240px;margin-left:-250px;margin-top:-260px;text-indent:-9999px;background:url("../images/logo.png") no-repeat 0 0}
+.top_box .btn_pop{position:absolute;left:50%;top:50%;width:128px;height:128px;margin-left:-64px;margin-top:-24px;background:url("../images/btn_pop.png") no-repeat 0 0;cursor:pointer}
+.top_box .btn_vol{position:absolute;right:20px;top:20px;width:32px;height:32px;background:url("../images/volume.png") no-repeat;cursor:pointer}
+.top_box .btn_vol.on{background-position:0 0}
+.top_box .btn_vol.off{background-position:0 -32px}
+.top_box .bg_dot{position:absolute;width:100%;height:100%;left:0;top:0;background:url("../images/bg.png");z-index:-9}
+/* navigation */
+.top_box .control{position:absolute;left:0;top:50%;margin-top:140px;width:100%;text-align:center}
+.top_box .control li{display:inline-block;list-style:none;padding:10px 14px;margin:0 0 4px 0;border:1px solid #FFFFFF;border-radius:8px;width:100px;height:22px;line-height:22px;font-size:14px;color:#FFFFFF;background-color:rgba(255,255,255,.4);cursor:pointer}
+.top_box .control li.on,
+.top_box .control li:hover{background-color:#FFFFFF;color:#000000}
+/* popup */
+.pop_yt{position:absolute;left:50%;top:50%;width:960px;height:540px;margin-left:-480px;margin-top:-270px;z-index:99;box-shadow:0 0 20px rgba(0,0,0,.2)}
+.pop_yt .close{position:absolute;right:-40px;top:0;width:40px;height:40px;background:url("../images/close.png") no-repeat 0 0;cursor:pointer}
+.pop_overlay{display:none;position:absolute;width:100%;height:100%;left:0;top:0;background:url("../images/bg_pop.png");z-index:9}
+
+.footer{position:absolute;left:0;bottom:10px;width:100%;font-size:11px;text-align:center;color:#525252}
+.footer a{color:#525252}
