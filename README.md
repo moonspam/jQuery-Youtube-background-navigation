@@ -5,7 +5,7 @@ jQuery plugin that lets you create background videos using youtube api and contr
 
 ### 기능
 - 영상이 끝나면 다음 영상으로 자동재생(마지막 영상이 끝나면 처음으로 이동)
-- 아이콘을 누르면 현재 재생되고 있는 배경을 레이어팝업(Modal dialog box)으로 노출
+- 플레이 아이콘을 누르면 현재 재생되고 있는 배경을 레이어팝업(Modal dialog box)으로 노출
 - 배경영상 음소거 버튼 추가
 
 ### Demo
