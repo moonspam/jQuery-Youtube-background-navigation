@@ -72,4 +72,9 @@ $(function(){
 			$(this).removeClass("off").addClass("on");
 		}
 	});
+
+	// check height
+	if(location.href.indexOf("?h=600") > -1) {
+		$(".top_box").css("height","600");
+	}
 });
