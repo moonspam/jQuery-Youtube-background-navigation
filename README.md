@@ -1,7 +1,7 @@
 # jQuery-Youtube-background-navigation
-> jQuery plugin that lets you create background videos using youtube api and control navigation.
+jQuery plugin that lets you create background videos using youtube api and control navigation.
 
-> [YouTube IFrame API](https://developers.google.com/youtube/iframe_api_reference)을 이용하여 배경에 영상을 재생해줍니다. 내비게이션 바를 이용하여 영상을 제어 할 수 있습니다.
+[YouTube IFrame API](https://developers.google.com/youtube/iframe_api_reference)을 이용하여 배경에 영상을 재생해줍니다. 내비게이션 바를 이용하여 영상을 제어 할 수 있습니다.
 
 ### 기능
 - 영상이 끝나면 다음 영상으로 자동재생(마지막 영상이 끝나면 처음으로 이동)
