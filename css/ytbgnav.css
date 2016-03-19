@@ -9,7 +9,8 @@ html,
 body{height:100%;font-family:tahoma, 'NanumBarunGothic', dotum, sans-serif}
 body{background-color:#000}
 .top_box{position:relative;width:100%;height:100%;overflow:hidden}
-.top_box iframe{position:absolute;width:400%;height:200%;margin-left:-150%;margin-top:-20%;z-index:-99}
+.top_box .yt_wrap{position:absolute;left:0;right:0;top:0;bottom:0;z-index:-99}
+.top_box .yt_box{position:absolute;left:50%;top:50%;width:1280px;height:720px}
 .top_box .title{position:absolute;left:50%;top:50%;width:500px;height:240px;margin-left:-250px;margin-top:-260px;text-indent:-9999px;background:url("../images/logo.png") no-repeat 0 0}
 .top_box .btn_pop{position:absolute;left:50%;top:50%;width:128px;height:128px;margin-left:-64px;margin-top:-24px;background:url("../images/btn_pop.png") no-repeat 0 0;cursor:pointer}
 .top_box .btn_vol{position:absolute;right:20px;top:20px;width:32px;height:32px;background:url("../images/volume.png") no-repeat;cursor:pointer}

@@ -9,6 +9,7 @@ function onYouTubeIframeAPIReady() {
 		videoId: bgID[_curClick],
 		playerVars: {
 			'controls': 0,
+			'showinfo': 0,
 			'wmode': "opaque"
 		},
 		events: {
@@ -19,6 +20,7 @@ function onYouTubeIframeAPIReady() {
 }
 var done = false;
 function onPlayerReady(event) {
+	event.target.getPlaybackQuality('default');
 	event.target.setVolume(80);
 	event.target.playVideo();
 }
@@ -37,6 +39,23 @@ function onPlayerStateChange(event) {
 	}
 }
 //////////////////////////////////////////////////////////////////////////////////////
+
+// YouTube Resize
+function ytResize() {
+	var x_percent = $(window).width() / 1280,
+		y_percent = $(window).height() / 720;
+	var x_num = parseInt(1280 * y_percent),
+		y_num = parseInt(720 * y_percent);
+	if(x_num >= $(window).width()){
+		$(".yt_wrap").css({"height" : y_num});
+		$(".yt_box").css({"width" : x_num, "height" : y_num, "marginLeft" : x_num/-2 + "px", "marginTop" : y_num/-2 + "px"});
+	}else{
+		var x_num = parseInt(1280 * x_percent);
+		var y_num = parseInt(720 * x_percent);
+		$(".yt_wrap").css({"height" : y_num});
+		$(".yt_box").css({"width" : x_num, "height" : y_num, "marginLeft" : x_num/-2 + "px", "marginTop" : y_num/-2 + "px"});
+	}
+}
 
 $(function(){
 	// click event
@@ -73,8 +92,15 @@ $(function(){
 		}
 	});
 
+	// start YouTube resize
+	ytResize();
+
 	// check height
 	if(location.href.indexOf("?h=600") > -1) {
 		$(".top_box").css("height","600");
 	}
+});
+
+$(window).resize(function() {
+	ytResize();
 });
