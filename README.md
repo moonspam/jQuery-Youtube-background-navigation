@@ -9,9 +9,9 @@ jQuery plugin that lets you create background videos using youtube api and contr
 - 배경영상 음소거 버튼 추가
 
 ### Demo
-풀페이지 데모 : http://iluku.net/youtube/index.html
+풀페이지 데모 : https://iluku.net/youtube/index.html
 
-높이지정 데모 : http://iluku.net/youtube/index.html?h=600
+높이지정 데모 : https://iluku.net/youtube/index.html?h=600
 
 ### 추가설명
 #### * 높이지정 방법
