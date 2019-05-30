@@ -21,7 +21,7 @@ function onYouTubeIframeAPIReady() {
 var done = false;
 function onPlayerReady(event) {
 	event.target.getPlaybackQuality('default');
-	event.target.setVolume(80);
+	event.target.mute();
 	event.target.playVideo();
 }
 function onPlayerStateChange(event) {
